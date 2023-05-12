@@ -1,0 +1,41 @@
+/* navbar.css */
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 60rem;
+  }
+  
+  nav ul li {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0; /* Remove left margin for the first li element */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+  
