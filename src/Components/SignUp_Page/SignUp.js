@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './SignUp.css'; // Import the CSS file
 import { AppContext } from '../ContextApi/AppContext';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignUpForm() {
     const [name, setName] = useState('');
@@ -9,14 +10,20 @@ export default function SignUpForm() {
     const [confirmPassword, setConfirmPassword] = useState('');
 
 
+    
     const {SignUp} = useContext(AppContext)
-
+ const Navigate = useNavigate();
     const handleSubmit = async (e) => {
+
+   
+
         e.preventDefault();
         try{
            if(password===confirmPassword){
             await SignUp(email,password)
             alert("account create succesfull")
+            Navigate("/login")
+
            }else{
             alert("password not match")
            }
@@ -65,7 +72,7 @@ export default function SignUpForm() {
                 <div>
                     <label htmlFor="confirmPassword">Confirm Password:</label>
                     <input
-                        required
+                        req
                         placeholder='Confirm Password'
                         type="password"
                         id="confirmPassword"

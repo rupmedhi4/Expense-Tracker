@@ -1,41 +1,68 @@
-/* navbar.css */
+.navbar-header {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
 
-header {
-    background-color: #f2f2f2;
-    padding: 10px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    margin-right: 60rem;
-  }
-  
-  nav ul li {
-    margin-right: 10px; /* Adjust margin as needed */
-  }
-  
-  nav ul li:first-child {
-    margin-left: 0; /* Remove left margin for the first li element */
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: #ff0000;
-  }
-  
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.action-buttons {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.action-buttons li {
+  margin-right: 10px;
+}
+
+.login-button,
+.signup-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #555;
+}
